@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, DSPDebatingTimerActivity!</string>
+    <string name="app_name">DSP-Debating-Timer</string>
+    <string name="redezeit">Redezeit:</string>
+    <string name="time_5min">5:00</string>
+    <string name="time_7min">7:00</string>
+    <string name="start">Redezeit starten</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Rede beendet</string>
+    <string name="time_7min_decimal">7.0</string>
+    <string name="resume">Rede fortsetzen</string>
+
+</resources>

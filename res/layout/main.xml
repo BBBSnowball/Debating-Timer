@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#158a9c"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/redezeit"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="@string/time_7min_decimal" />
+
+        <Button
+            android:id="@+id/time_5min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/time_5min" />
+
+        <Button
+            android:id="@+id/time_7min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/time_7min" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btStartPause"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start">
+        	<requestFocus />
+    </Button>
+
+    <Button
+        android:id="@+id/btStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="@string/stop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+	
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/ic_launcher"
+	        android:contentDescription="DSP Logo" />
+    
+	    <de.debatingsocietypaderborn.debating_timer.FontFitTextView
+	        android:id="@+id/tvCurrentTime"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center|center_vertical"
+	        android:text=""
+	        android:textColor="#000000" />
+    
+    </LinearLayout>
+
+</LinearLayout>
